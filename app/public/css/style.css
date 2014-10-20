@@ -20,3 +20,7 @@ th, td {
     text-align: left;
     padding: 10px;
 }
+
+.padtop {
+    padding-top: 10px;
+}
