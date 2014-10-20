@@ -1,0 +1,35 @@
+{
+	"name": "aw-api-alert",
+	"version": "0.1.0",
+	"description": "Checks AW API at configurable interval and logs status to local file.",
+	"author": {
+		"name": "Mehalso",
+		"email": "mehalso@gmail.com"
+	},
+	"website":{
+		"url": "http://yourwebsite.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/mattmanx"
+	},
+	"private": false,
+	"dependencies": {
+		"express":			"latest",
+		"fs.extra":			"latest",
+		"moment":			"latest",
+		"underscore":		"latest",
+        "restler":          "latest",
+        "winston":          "latest",
+        "cron":             "latest",
+        "nedb":             "latest",
+        "nodemailer":       "latest",
+        "jade":             "latest",
+        "cookie-parser":    "~1.0.1",
+        "body-parser":      "~1.0.0"
+	},
+	"engines": {
+		"node":			"latest",
+		"npm":			"latest"
+	}
+}

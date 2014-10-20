@@ -1,0 +1,30 @@
+extends base
+
+block content
+    // Wrapper
+    #wrapper
+        h1= title
+            h2 API Info
+            #apiInfo
+                p
+                    strong URL:
+                    span= apiUrl
+                    br
+                    strong Method:
+                    span= apiMethod
+                    br
+                    strong Timeout:
+                    span #{apiTimeout}  ms
+
+            // History
+            h2 API Execution History
+            #resultList
+                table.pure-table-striped
+                    thead
+                        th Date
+                        th Result
+                        th Message
+                    tbody
+            // /USER LIST
+
+    // /WRAPPER

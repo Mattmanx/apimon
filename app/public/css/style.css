@@ -1,0 +1,9 @@
+#wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#resultList.table {
+    width: 100%;
+    margin: 20px;
+}

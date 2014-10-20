@@ -1,0 +1,32 @@
+module.exports = {
+    //TODO: Make this a 'smarter' config model, load credentials from external file/env/command line, base on environment characteristic (i.e. dev/qa/prod)
+    apiConfig : {
+        apiUser: "USERNAMEHERE",
+        apiPass: "PASSWORDHERE",
+        apiMethod: "GET|POST",
+        apiEndpoint: "ENDPOINTHERE", //Make this an array in the future and support multiple endpoints
+        apiHeaders: {
+            'HEADERKEY1' : 'HEADERVALUE1'
+        },
+        timeout: 60000
+    },
+    taskConfig : {
+        cronSchedule: "CRONSCHEDULEHERE" //e.g. 0 * * * * for hourly on the hour
+    },
+    emailConfig : { //assumes smtp
+        smtpAccount: "ACCOUNTUSERHERE",
+        smtpAccountPassword: "ACCOUNTPWHERE",
+        emailFrom: "FROMADDRESSHERE",
+        emailTo: "TOADDRESSHERE",
+        smtpServerAddress: "SMTPADDRESSHERE",
+        smtpServerPort: 568
+    },
+    persistenceConfig : {
+        persistApiHistory: true,
+        location: "PATHTOLOCALDBFILE",
+        maxRecordsToKeep: 250,  //maximum number of records to return
+        maxRecordsToReturn: 50
+    },
+    listenPort: 3000
+    
+};
