@@ -50,11 +50,11 @@ History.get = function(page, callback) {
         offset = (page - 1) * config.persistenceConfig.maxRecordsToReturn;
     }
     
-    db.find({}).sort({ dateTime: 1}).skip(offset).limit(config.persistenceConfig.maxRecordsToReturn).exec(function (err, docs) {
+    db.find({}).sort({ dateTime: -1}).skip(offset).limit(config.persistenceConfig.maxRecordsToReturn).exec(function (err, docs) {
         if(err) {
             logger.error('History model returned error.  Message: ' + err.message);
         } else {
-            logger.info('History model returned ' + docs.size + ' records.');
+            logger.info('History model returned ' + docs.length + ' records.');
         }
 
 

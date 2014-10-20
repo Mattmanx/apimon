@@ -6,18 +6,22 @@ block content
         h1= title
             h2 API Info
             #apiInfo
-                p
-                    strong URL:
-                    span= apiUrl
-                    br
-                    strong Method:
-                    span= apiMethod
-                    br
-                    strong Timeout:
-                    span #{apiTimeout}  ms
+                .pure-g
+                    .pure-u-1-4
+                        strong URL:
+                    .pure-u-3-4
+                        | #{apiUrl}
+                    .pure-u-1-4
+                        strong Method:
+                    .pure-u-3-4
+                        | #{apiMethod}
+                    .pure-u-1-4
+                        strong Timeout:
+                    .pure-u-3-4
+                        | #{apiTimeout}
 
             // History
-            h2 API Execution History
+            h2 History
             #resultList
                 table.pure-table-striped
                     thead

@@ -3,7 +3,20 @@
     margin: 0 auto;
 }
 
-#resultList.table {
+#resultList, #apiInfo {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#resultList table {
     width: 100%;
-    margin: 20px;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
 }
